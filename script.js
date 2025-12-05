@@ -134,14 +134,12 @@ function openProductModal(card) {
                 element.src = media.src;
                 element.alt = productName;
             } else if (media.type === 'video') {
-    element = document.createElement('video');
-    element.src = media.src;
-    element.controls = true;
-    element.loop = true; 
-    element.muted = true; 
-    element.preload = "none"; // ✅ ESTO EVITA LAGS
-    element.setAttribute('playsinline', ''); 
-}
+                element = document.createElement('video');
+                element.src = media.src;
+                element.controls = true;
+                element.loop = true; 
+                element.muted = true; 
+                element.setAttribute('playsinline', ''); 
             }
             carruselInner.appendChild(element);
         });
@@ -252,8 +250,8 @@ function filtrar(categoria) {
             producto.classList.add("hide");
         }
     });
-}
-
+} // <-- ¡Añade esta llave de CIERRE!
+//     Esto termina la función filtrar()
 
 // ===============================================
 // 🚀 FIX: Asegura que el evento de click en el fondo de la modal funcione (Corrige TypeError)
@@ -261,6 +259,7 @@ function filtrar(categoria) {
 
 document.addEventListener('DOMContentLoaded', (event) => {
     
+
     // Intenta obtener la modal. Ahora estamos seguros de que existe en el DOM.
     const modal = document.getElementById("productModal");
     
