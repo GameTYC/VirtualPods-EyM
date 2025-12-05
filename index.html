@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>VirtualPods-EyM</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+<body>
+
+    <header class="nav-isla">
+        <div class="nav-content" id="navContent"> 
+            <span>Destacados</span>
+            <span>Stock</span>
+            <span>Info</span>
+            <span>Contacto</span>
+
+            <div class="menu-btn" onclick="toggleMenu()">
+                ☰
+            </div>
+        </div>
+
+        <div class="menu-desplegable" id="menu">
+            <a href="#destacados">Destacados</a>
+            <a href="#stock-section">Stock</a>
+            <a href="#info">Info</a>
+            <a href="#contacto">Contacto</a>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="hero-img">
+            <img src="./assets/auri.png" alt="Auriculares" loading="lazy" decoding="async">
+        </div>
+
+        <div class="hero-text">
+            <h1>VirtualPods-EyM</h1>
+            <p>Auriculares a calidad-precio</p>
+        </div>
+    </section>
+    
+<section id="destacados" class="destacados">
+    <h2 class="titulo-seccion">DESTACADOS</h2>
+
+    <div class="carrusel">
+
+        <div class="card producto" onclick="openProductModal(this)"> 
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 1</span>
+            <span class="corazon">❤</span>
+            <img src="assets/ultrapods.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">UltraPods MAX ($13.599)</p>
+            <div class="info-extra">
+                <p>La máxima calidad de audio.</p>
+                <p>ANC Pro y Modo Ambiente.</p>
+            </div>
+        </div>
+
+        <div class="card producto" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 1</span>
+            <span class="corazon">❤</span>
+            <img src="assets/p9.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Auricular P9 ($11.999)</p>
+            <div class="info-extra">
+                <p>Diseño Over-Ear cómodo.</p>
+                <p>Ideal para gaming y música.</p>
+            </div>
+        </div>
+
+        <div class="card producto" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 3</span>
+            <span class="corazon">❤</span>
+            <img src="assets/inpods12.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">InPods 12 ($9.999)</p>
+            <div class="info-extra">
+                <p>Compatibilidad universal.</p>
+                <p>Estuche de carga rápida.</p>
+            </div>
+        </div>
+
+    </div>
+</section>
+
+<section id="stock-section" class="stock-section"> 
+    <h2 class="titulo-seccion">STOCK COMPLETO</h2>
+
+    <div class="filtros">
+        <button onclick="filtrar('todos')" class="activo">Todos</button>
+        <button onclick="filtrar('led')">Luces LED</button>
+        <button onclick="filtrar('auriculares')">Auriculares</button>
+        <button onclick="filtrar('parlantes')">Parlantes</button>
+        <button onclick="filtrar('barberia')">Barbería</button>
+    </div>
+
+    <div class="grid-stock">
+        
+        <div class="card producto auriculares show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 1</span>
+            <span class="corazon">❤</span>
+            <img src="assets/ultrapods.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">UltraPods MAX ($13.599)</p>
+            <div class="info-extra"><p>La máxima calidad de audio.</p><p>ANC Pro y Modo Ambiente.</p></div>
+        </div>
+        
+        <div class="card producto auriculares show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 1</span>
+            <span class="corazon">❤</span>
+            <img src="assets/p9.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Auricular P9 ($11.999)</p>
+            <div class="info-extra"><p>Diseño Over-Ear cómodo.</p><p>Ideal para gaming y música.</p></div>
+        </div>
+        
+        <div class="card producto auriculares show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 3</span>
+            <span class="corazon">❤</span>
+            <img src="assets/inpods12.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">InPods 12 ($9.999)</p>
+            <div class="info-extra"><p>Compatibilidad universal.</p><p>Estuche de carga rápida.</p></div>
+        </div>
+
+        <div class="card producto auriculares show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 2</span>
+            <span class="corazon">❤</span>
+            <img src="assets/e75.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Auricular E75 ($7.999)</p>
+            <div class="info-extra"><p>Conexión estable.</p><p>Micrófono incorporado.</p></div>
+        </div>
+        
+        <div class="card producto auriculares show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 2</span>
+            <span class="corazon">❤</span>
+            <img src="assets/ip4.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Auricular IP4 ($4.999)</p>
+            <div class="info-extra"><p>El más económico.</p><p>Diseño compacto.</p></div>
+        </div>
+
+        <div class="card producto auriculares show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 2</span>
+            <span class="corazon">❤</span>
+            <img src="assets/pro6s.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Auricular Pro 6S ($9.999)</p>
+            <div class="info-extra"><p>Alta fidelidad de sonido.</p><p>Control táctil.</p></div>
+        </div>
+
+        <div class="card producto barberia show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 2</span>
+            <span class="corazon">❤</span>
+            <img src="assets/patillera.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Patillera Profesional ($10.500)</p>
+            <div class="info-extra"><p>Incluye 3 peines guía.</p><p>Batería recargable de litio.</p></div>
+        </div>
+
+        <div class="card producto led show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 2</span>
+            <span class="corazon">❤</span>
+            <img src="assets/tira_led.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Tira LED RGB 5m ($11.999)</p>
+            <div class="info-extra"><p>Control con app y remoto.</p><p>Adhesivo 3M.</p></div>
+        </div>
+
+        <div class="card producto parlantes show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 1</span>
+            <span class="corazon">❤</span>
+            <img src="assets/parlante_tokyo.JPG" class="producto-img"> <p class="nombre">Parlante Versión Tokyo ($15.999)</p>
+            <div class="info-extra"><p>Diseño exclusivo y potente.</p><p>Sonido 360º.</p></div>
+        </div>
+
+        <div class="card producto parlantes show" onclick="openProductModal(this)">
+            <span class="logo-marca">VP</span>
+            <span class="stock">Stock: 0 (VENDIDO)</span>
+            <span class="corazon">💔</span>
+            <img src="assets/parlante_music.JPG" class="producto-img" loading="lazy" decoding="async"> <p class="nombre">Parlante Músic ($0.00)</p>
+            <div class="info-extra"><p>Agotado por el momento.</p><p>¡Vuelve pronto!</p></div>
+        </div>
+
+    </div>
+</section>
+
+<section id="info" class="info">
+    <h2 class="titulo-seccion">NUESTRA PROMESA</h2>
+    
+    <div class="info-container">
+        <h3>🎧 Calidad que se escucha, precio que se agradece.</h3>
+        
+        <p>Cada producto, fue testeado y probando, el estado de la caja no nos responsabilidad nuestra, sino de donde se compro tsl producto. Si el producto tiene una falla o falta de componente (cable, auricular, cargador, etc) mande un mensaje a Instagram 
+                    <i class="fab fa-instagram"></i>
+                </a>
+                
+                o Whatsapp   <i class="fab fa-whatsapp"></i>
+                </a> , que le responderemos con gusto. Gracias.</p>
+        
+        <p class="frase-emotiva">"Detrás de cada producto o inversion hay un objetivo, el mio, pagar la universidad para poder estudiar lo wue quiero..."</p>
+    </div>
+</section>
+
+
+<footer id="contacto" class="footer">
+    <div class="footer-grid">
+        <div class="footer-columna">
+            <h4>VirtualPods-EyM</h4>
+            <p>La mejor calidad-precio en tecnología de audio y accesorios.</p>
+            <p>&copy; 2025 Todos los derechos reservados.</p>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Secciones</h4>
+            <a href="#destacados">Destacados</a>
+            <a href="#stock-section">Stock Completo</a>
+            <a href="#info">Nuestra Promesa</a>
+        </div>
+
+        <div class="footer-columna">
+            <h4>Contacto</h4>
+            <p>📞 11-3027-9349 (Ventas)</p>
+            <p>📧 virtualpods.eym@mail.com</p>
+            
+            <h4 class="social-title">Síguenos</h4>
+            <div class="social-links">
+                <a href="https://www.instagram.com/emimenndez__?igsh=MXcydHM1cDIxbDVydw==" target="_blank" aria-label="Instagram">
+                    <i class="fab fa-instagram"></i>
+                </a>
+                <a href="https://wa.me/5491112345678" target="_blank" aria-label="WhatsApp">
+                    <i class="fab fa-whatsapp"></i>
+                </a>
+                <a href="mailto:virtualpods.eym@mail.com" aria-label="Correo Electrónico">
+                    <i class="fas fa-envelope"></i>
+                </a>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<div id="productModal" class="modal">
+    <div class="modal-content">
+        
+        <div class="media-carrusel">
+            <div class="carrusel-inner" id="modalCarruselInner">
+                </div>
+            <button class="prev-btn" onclick="changeSlide(-1)">&#10094;</button>
+            <button class="next-btn" onclick="changeSlide(1)">&#10095;</button>
+            
+            <span class="close-btn" onclick="closeModal()">&times;</span>
+            <span class="logo-marca-modal">VP</span>
+        </div>
+
+        <div class="product-details">
+            <h2 id="modalProductName">Nombre del Producto</h2>
+            <p class="product-price" id="modalProductPrice">$0.00</p>
+            
+            <div class="product-info-body">
+                <h3>Características Destacadas</h3>
+                <ul id="modalProductFeatures">
+                    </ul>
+                
+                <h3>Descripción</h3>
+                <p id="modalProductDescription">Aquí va una descripción más completa del producto.</p>
+            </div>
+            
+            <div class="action-buttons">
+                <a id="whatsappLink" href="https://wa.me/5491130279349" target="_blank" class="btn-action whatsapp-btn">
+                    <i class="fab fa-whatsapp"></i> Quiero el producto
+                </a>
+                <a id="instagramLink" href="https://www.instagram.com/emimenndez__?igsh=MXcydHM1cDIxbDVydw==" target="_blank" class="btn-action instagram-btn">
+                    <i class="fab fa-instagram"></i> Ver en Instagram
+                </a>
+            </div>
+
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
+</body>
+</html>
