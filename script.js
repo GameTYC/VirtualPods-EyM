@@ -7,7 +7,7 @@ const productData = {
         media: [
             { type: 'img', src: 'assets/ultrapods.JPG' },
             { type: 'img', src: 'assets/ultrapods_det2.JPG' }, 
-            { type: 'video', src: 'assets/ultrapods_video.mp4' } 
+            { type: 'video', src: 'assets/ultrapods_video.MOV' } 
         ]
     },
     "Auricular P9": {
