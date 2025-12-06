@@ -76,9 +76,9 @@ const productData = {
         ]
     },
     "Parlante Músic": {
-        price: "$0.00",
-        description: "Lamentablemente agotado, pero es uno de nuestros best-sellers. ¡Consulta por la fecha de reposición!",
-        features: ["Agotado por el momento.", "¡Vuelve pronto!"],
+        price: "$12.599",
+        description: "Lamentablemente solo queda un stock, pero es uno de nuestros best-sellers. ¡Consulta por la fecha de reposición!",
+        features: ["Queda un solo stock del parlante.", "¡Apúrate que se acaba!"],
         media: [
             { type: 'img', src: 'assets/parlante_music.JPG' }
         ]
